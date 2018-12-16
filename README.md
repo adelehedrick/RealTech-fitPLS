@@ -1,6 +1,6 @@
 # Simple Flask API Wrapper for fitPLS
 
-The endpoint /fitPLS expects a POST request, _Content-Type_ set to _application/json_ and for the body of the request to contain the training dataset as it formatted in the example file `training_dataset.json`.
+The endpoint `/fitPLS` expects a _POST_ request, _Content-Type_ set to _application/json_ and for the body of the request to contain the training dataset as it formatted in the example file `training_dataset.json`.
 
 To see if the service is running you can hit the index `/` and expect the message "Greetings! Nothing to see here though."
 
