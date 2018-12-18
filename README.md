@@ -23,3 +23,14 @@ You can expect the service to run port 5000
 4. Under 'Base configuration', choose 'Upload your code' and upload the `RealTech_Docker_for_AWS.zip` located in this repo
 5. Click 'Create environment' button
 6. When the environment is running you can use swagger to hit the `/fitPLS` endpoint
+
+## Testing with cURL
+
+Within a terminal, navigate to the folder containing your `training_dataset.json` and run the following curl command with the URL of the service followed by `/fitPLS`.
+
+```
+curl --header "Content-Type: application/json" \
+  --request POST \
+  --data "@./training_dataset.json" \
+  http://realtech-env.ee74pzspyf.us-east-1.elasticbeanstalk.com/fitPLS
+```
